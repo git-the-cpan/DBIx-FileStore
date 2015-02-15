@@ -14,7 +14,7 @@ my $clean = 0;
 main();
 
 sub Usage {
-        "fdbtidy [--verbose] [--clean]: Removes dangling FileDB blocks.\n";
+        "fdbtidy [--verbose] [--clean]: Removes dangling FileDB blocks. Like fsck.\n";
 }
 
 sub main {

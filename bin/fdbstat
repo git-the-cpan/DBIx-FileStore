@@ -27,7 +27,7 @@ sub main {
     # count how many blocks are numbered '0', there's one for each file
     # also sum up the filesizes
     my ($files, $bytes) = $filestore->{dbh}->selectrow_array( 
-            "select count(*), sum(c_len) from $filestore->{filetable} where b_num like 0", {} );
+            "select count(*), sum(c_len) from $filestore->{filetable} where b_num=0", {} );
     $bytes ||= 0;
 
     # count the blocks
